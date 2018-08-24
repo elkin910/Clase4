@@ -1,0 +1,176 @@
+* {
+    /*box-sizing: border-box;*/
+}
+html {
+    background-color: #F8F6F5;
+}
+nav {
+    font-weight: bold;
+    color: gray;
+    /*border: 1px solid red*/
+}
+/* no ago ajuste de la imagen de logo no de cart */
+
+.visibleDesktop{
+		display:block;
+	}
+	.visibleMobile{
+		display:none;
+	}
+}
+.menu1 {
+    width: 35%;
+    /*border: 1px solid red*/
+}
+.menu3 {
+    width: 40%;
+    /*border: 1px solid red*/
+}
+.menu1, .menu2 {
+    float: left;
+}
+.menu2 {
+    text-align: center;
+    width: 20%;
+    /*border: 1px solid red*/
+}
+nav ul li {
+    float: left;
+    margin-left: 20px;
+}
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu3 {
+    float: right;
+}
+/*esta ultia parte no esta definida en el elemnto html no se que hace exactamente*/
+
+.clear {
+    clear: both;
+}
+.menuOculto {
+    display: none;
+}
+.vermas {
+    cursor: pointer;
+    font-size: 20px;
+}
+.verMas:hover {
+    color: red;
+}
+@media only screen and (max-width: 1189px) {
+    body {
+        background-color: #F8F6F5;
+    }
+    .menu1 {
+        width: 30%;
+    }
+    .menu2 {
+        width: 20%;
+    }
+    .menu3 {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    body {
+        background-color: #F8F6F5;
+    }
+    .menu1 {
+        width: 25%;
+    }
+    .menu2 {
+        width: 20%;
+    }
+    .menu3 {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 954px) {
+    body {
+        background-color: #F8F6F5;
+    }
+    .menu1 {
+        width: 20%
+    }
+    .menu2 {
+        width: 15%
+    }
+    .menu3 {
+        width: 55%
+    }
+    .imgLogo {
+        width: 150px;
+        height: 25px;
+    }
+}
+@media only screen and (max-width: 870px) {
+    body {
+        background-color: #F8F6F5;
+    }
+    .menu1 {
+        width: 20%
+    }
+    .menu2 {
+        width: 10%
+    }
+    .menu3 {
+        width: 60%
+    }
+    .imgLogo {
+        width: 150px;
+        height: 25px;
+        margin-left: -50px;
+    }
+}
+@media only screen and (max-width: 798px) {
+    .visibleDesktop{
+		display:none;
+	}
+	.visibleMobile{
+		display:block;
+	}
+	.menu1, .menu3{	width: 30%;}
+	.contenidoMenu ul li{
+		float: none !important;
+		
+	}
+	.navMobile .contenidoMenu{
+		position: relative;
+		width: 100%;
+		text-align: center;
+		top: 80px;
+	}
+	.navMobile .contenidoMenu .menu1{
+		position: absolute;
+		width: 100%;
+	}
+	.navMobile .contenidoMenu ul li{
+		margin-left: -40px;
+	}
+	.imgLogo {
+        width: 150px;
+        height: 25px;
+        margin-left: -50px;
+    }
+}
+}
+
+@media screen and (max-width: 300px) {
+
+	.visibleDesktop{
+		display:none;
+	}
+	.visibleMobile{
+		display:block;
+	}
+	.menu1, .menu3{	width: 20%;}
+	.iconCar{	width: 10px;	height: 10px;}
+
+	ul li{
+		float: none;
+		background-color: red;
+	}
+}
